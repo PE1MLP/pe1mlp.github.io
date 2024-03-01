@@ -40,7 +40,7 @@ body {
 
 body>* {
   grid-column: 2;
-} 
+}
 
 header {
   background-color: var(--accent-bg);
@@ -98,15 +98,14 @@ p {
 }
 
 /* Format navigation */
-header>nav {
+header > nav {
   font-size: 1rem;
   line-height: 2;
   padding: 0 1rem 0 0;
 }
 
 /* Use flexbox to allow items to wrap, as needed */
-header>nav ul,
-header>nav ol {
+header > nav ul {
   align-content: space-around;
   align-items: center;
   display: flex;
@@ -116,15 +115,15 @@ header>nav ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #333;
 }
 
-header>nav ul li,
-header>nav ol li {
+header > nav ul li {
   display: inline-block;
 }
 
-header>nav a,
-header>nav a:visited {
+header > nav a,
+header > nav a:visited {
   margin: 0 0.5rem 1rem 0.5rem;
   border: 1px solid var(--border);
   border-radius: var(--standard-border-radius);
@@ -132,37 +131,35 @@ header>nav a:visited {
   display: inline-block;
   padding: 0.1rem 1rem;
   text-decoration: none;
+  color: white;
 }
 
-header>nav a:hover,
-header>nav a.current,
-header>nav a[aria-current="page"] {
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"] {
   border-color: var(--accent);
   color: var(--accent);
   cursor: pointer;
+  color: white;
 }
 
 
-nav.menubar ul {
+main > nav ul {
   list-style-type: none;
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #333; */
 }
 
-nav.menubar ul li {
-  float: left;
+main > nav ul li {
+  /* float: left; */
 }
 
-nav.menubar ul li a {
-  display: block;
+main > nav ul li a {
+  /* display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px; */
   text-decoration: none;
 }
-
-nav.menu ul {
-  list-style-type: none;
-} 
